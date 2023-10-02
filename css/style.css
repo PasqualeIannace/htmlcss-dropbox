@@ -18,6 +18,12 @@ header {
     background-color: aqua;
 }
 
+footer {
+    background-color: #000000;
+    color: white;
+    min-height: 400px;
+}
+
 /* Classi Main */
 
 .bluBackgr {
@@ -82,9 +88,67 @@ header {
     .wrap {
         display: flex;
         flex-wrap: wrap;
-        min-height: 450px;
+        min-height: 800px;
+        justify-content: space-between;
     }
 
+    .cellaWr {
+        background-color: blueviolet;
+        width: calc(95% / 3);
+        margin-top: 25px;
+    }
+
+    /* Sesto container */
+    .aziendePartner {
+        background-color: rosybrown;
+        display: flex;
+        min-height: 500px;
+    }
+
+    .aziende {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: palegreen;
+    }
+
+    .aziendeC {
+        width: 40%;
+    }
+
+    .quadrato {
+        background-color: yellow;
+        width: calc(100% / 2);
+    }
+
+    /* Settimo container */
+    .container7 {
+        background-color: #B4D0E7;
+        min-height: 350px;
+    }
+
+    .c7 {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        align-items: center;
+    }
+
+    /* Ottavo container */
+    .faq {
+        margin: 25px 0;
+    }
+
+    /* Nono container */
+    .container9 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-direction: column;
+    }
 /* Classi Generiche */
 
 .m20 {
