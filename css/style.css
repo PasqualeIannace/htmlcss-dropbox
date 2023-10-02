@@ -7,3 +7,90 @@
 body {
     font-family: sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+}
+
+/* Classi Main */
+
+.bluBackgr {
+    background-color: #B4D0E7;
+    padding-top: 70px;
+    height: 700px;
+} 
+
+.bluContainer {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 15% 0 15%;
+    min-height: 560px;
+}
+
+.bContainer {
+    display: flex;
+    background-color: teal;
+}
+
+.bContainerL {
+    width: 50%;
+}
+
+.bContainerR {
+    width: 50%;
+}
+
+.abbonamenti {
+    background-color: greenyellow;
+}
+
+.abbCelle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cella1, .cella2, .cella3 {
+    background-color: green;
+    min-height: 800px;
+    width: 30%;
+}
+
+.cella4 {
+    background-color: green;
+    min-height: 250px;
+}
+
+    /* Terzo container */
+    .partner {
+        background-color: gold;
+        display: flex;
+        min-height: 500px;
+    }
+
+    /* Quarto container */
+    .business {
+        background-color: royalblue;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 450px;
+    }
+
+/* Classi Generiche */
+
+.m20 {
+    margin: 0 20%;
+}
+
+.mTop50 {
+    margin-top: 50px;
+}
