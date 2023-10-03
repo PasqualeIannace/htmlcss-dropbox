@@ -23,7 +23,7 @@ header {
 footer {
     background-color: #000000;
     color: white;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 h1 {
@@ -171,8 +171,8 @@ li > i {
     }
 
     /* Quarto container */
-    .business {
-        background-color: royalblue;
+    .cellaWr > img {
+        width: 100%;
     }
 
     .wrap {
@@ -183,7 +183,6 @@ li > i {
     }
 
     .cellaWr {
-        background-color: blueviolet;
         width: calc(95% / 3);
         margin-top: 25px;
     }
@@ -192,29 +191,85 @@ li > i {
     .aziendePartner {
         background-color: rosybrown;
         display: flex;
-        min-height: 500px;
+        min-height: 600px;
     }
 
     .aziende {
-        width: 30%;
+        width: 32%;
         display: flex;
         flex-wrap: wrap;
         background-color: palegreen;
     }
 
     .aziendeC {
-        width: 40%;
+        width: 36%;
+        background: #F5F5F5;
+        padding: 50px 80px;
     }
 
     .quadrato {
         background-color: yellow;
         width: calc(100% / 2);
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .quadrato > img {
+        width: 70%;
+        filter: invert(1);
+    }
+
+    #imgFix {
+        object-fit: none;
+    }
+
+    .qGreen {
+        background: #A2D39B;
+        border: 10px solid #D2E9CD;
+    }
+
+    .qViolet {
+        background: #60092B;
+    }
+
+    .qBlue {
+        background: #0093CE;
+    }
+
+    .qRed {
+        background: #FF1B1C;
+    }
+
+    .qLightRed {
+        background: #D50120;
+    }
+    .qLightBlue {
+        background: #B4D0E7;
+    }
+    .qStrongBlue {
+        background: #0D2481;
+    }
+    .qYellow {
+        background: #FFD830;
     }
 
     /* Settimo container */
     .container7 {
         background-color: #B4D0E7;
         min-height: 350px;
+    }
+
+    .btnTrial {
+        padding: 13px 0px;
+        font-size: 17px;
+        width: 400px;
+        border: none;
+    }
+
+    .h2Trial {
+        color: #60092B;
+        padding-right: 15%;
     }
 
     .c7 {
@@ -233,11 +288,18 @@ li > i {
     .container9 {
         display: flex;
         justify-content: space-between;
+        padding: 50px 0;
     }
 
     .linkContainer {
         display: flex;
         flex-direction: column;
+    }
+
+    .linkContainer > a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 0;
     }
 /* Classi Generiche */
 
@@ -269,6 +331,14 @@ li > i {
     padding: 10px 0;
 }
 
+.pT200 {
+    padding: 200px 0;
+}
+
+.wi60 {
+    width: 60%;
+}
+
 .wi80 {
     width: 80%;
 }
@@ -285,6 +355,10 @@ li > i {
 
 .cGray {
     color: #404040;
+}
+
+.cWhiteGr {
+    color: #ffffff75;
 }
 
 .lineH {
