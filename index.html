@@ -11,18 +11,18 @@
     <!-- nav bar -->
     <header>
         <!-- left -->
-        <div class="navL">
-            <img src="./img/logo-small.png" alt="">
-            <a href="">Perchè Dropbox</a>
-            <a href="">Funzioni</a>
-            <a href="">Piani e Prezzi</a>
+        <div class="nav">
+            <a href=""><img class="pRL" src="./img/logo-small.png" alt="Dropbox Logo"></a>
+            <a class="pRL" href="">Perchè Dropbox</a>
+            <a class="pRL" href="">Funzioni</a>
+            <a class="pRL" href="">Piani e Prezzi</a>
         </div>
         <!-- right -->
-        <div class="navR">
-            <a href="">Supporto</a>
-            <a href="">Contatta l'ufficio vendite</a>
-            <a href="">Accedi</a>
-            <button>Inizia</button>
+        <div class="nav">
+            <a class="pRL" href="">Supporto</a>
+            <a class="pRL" href="">Contatta l'ufficio vendite</a>
+            <a class="pRL" href="">Accedi</a>
+            <button class="btnBlue bStart">Inizia</button>
         </div>
     </header>
 
@@ -32,15 +32,15 @@
         <div class="bluBackgr">
             <div class="bluContainer">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-                <div class="bContainer">
+                <div class="bContainer mTop50">
                     <div class="bContainerL">
-                        <p>testo</p>
-                        <button>Inizia</button>
-                        <p>Annulla</p>
-                        freccia
+                        <p class="lineH">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente</p>
+                        <button class="btnBlue bStart mTB">Inizia la tua prova gratuita</button>
+                        <p>Annulla in qualsiasi momento</p>
+                        <i id="freccia" class="fa-solid fa-arrow-down-long fa-2xl"></i>
                     </div>
                     <div class="bContainerR">
-                        immagine
+                        <img class="jumbo" src="./img/jumbo.png" alt="Immagine app">
                     </div>
                 </div>
             </div>
@@ -48,37 +48,178 @@
 
         <!-- Secondo container -->
         <div class="abbonamenti m20">
-            <h2>Trova il piano business che fa per te</h2>
-            <input type="radio" name="" id="">Fatturazione mensile
-            <input type="radio" name="" id="">Fatturazione annuale
+            <h2 class="mBot50">Trova il piano business che fa per te</h2>
+            <input type="radio" name="fatturazione" id="">Fatturazione mensile
+            <input type="radio" name="fatturazione" id="">Fatturazione annuale
 
             <div class="abbCelle mTop50">
-                <div class="cella1">
-                    fsjdof
+
+                <!-- Prima cella -->
+                <div class="cella">
+                    <div class="border">
+                        <i class="fa-solid fa-user"></i>
+                        Singolo
+                    </div>
+                    <div class="intCella">
+                        <h3>Professional</h3>
+                        <p class="mTB1em bold">$ 12.00</p>
+                        <p class="mBot50 cGray">/mese</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                1 utente</li>
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                5 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Funzioni di produttività premium e condivisione file semplice e sicura
+                            </li>
+                        </ul>
+                        <button class="btnBlue btnCella mTB">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr class="hrCella">
+                        <h4>Punti salienti del piano</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Invia file fino a 100 GB con Dropbox Transfert
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cella2">
-                    fssdfs
+                <!-- Seconda cella -->
+                <div class="cella">
+                    <div class="border">
+                        <i class="fa-solid fa-user"></i>
+                        Singolo
+                    </div>
+                    <div class="intCella">
+                        <h3>Professional</h3>
+                        <p class="mTB1em bold">$ 12.00</p>
+                        <p class="mBot50 cGray">/mese</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                1 utente</li>
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                5 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Funzioni di produttività premium e condivisione file semplice e sicura
+                            </li>
+                        </ul>
+                        <button class="btnBlue btnCella mTB">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr class="hrCella">
+                        <h4>Punti salienti del piano</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Invia file fino a 100 GB con Dropbox Transfert
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Invia file fino a 100 GB con Dropbox Transfert
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cella3">
-                    fsdfsf
+                <!-- Terza cella -->
+                <div class="cella">
+                    <div class="border">
+                        <i class="fa-solid fa-user"></i>
+                        Singolo
+                    </div>
+                    <div class="intCella">
+                        <h3>Professional</h3>
+                        <p class="mTB1em bold">$ 12.00</p>
+                        <p class="mBot50 cGray">/mese</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                1 utente</li>
+                            <li>
+                                <i class="fa-solid fa-folder"></i>
+                                5 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Funzioni di produttività premium e condivisione file semplice e sicura
+                            </li>
+                        </ul>
+                        <button class="btnBlue btnCella mTB">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr class="hrCella">
+                        <h4>Punti salienti del piano</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Invia file fino a 100 GB con Dropbox Transfert
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" style="color: #005eff;"></i>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- Quarta cella / orizzontale -->
             <div class="cella4 mTop50">
-                dsfsdgdf
+                <div class="border">
+                    <i class="fa-solid fa-user"></i>
+                    Singolo
+                </div>
+                <div class="intCella">
+                    <div class="bContainer">
+                        <div class="bContainerR">
+                            <h3>Enterprise</h3>
+                            <h4 class="mTB1em">Contatta l'ufficio vendite per i prezzi</h4>
+                            <p class="mTop50">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                        </div>
+                        <div class="bContainerL">
+                            <button class="btnBlue btnCella">Prova gratis per 30 giorni</button>
+                        </div>
+                    </div>       
+                </div>
+            </div>
             </div>
         </div>
 
         <!-- Terzo container -->
         <div class="partner m20">
-            <div class="bContainerL">
-                immagine
+            <div class="bContainerR">
+                <img class="wi80" src="./img/partner.png" alt="partner">
             </div>
 
-            <div class="bContainerR">
-                <h2>Entra in contatto con un partner Dropbox</h2>
-                <p>Trova un partner</p>
-                <button>Trova un partner</button>
+            <div class="bContainerL">
+                <h3>Entra in contatto con un partner Dropbox</h3>
+                <p class="lineH pTB10">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <button class="btnGray mTB1em">Trova un partner</button>
             </div>
         </div>
 
