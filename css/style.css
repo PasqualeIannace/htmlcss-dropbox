@@ -61,10 +61,27 @@ li {
     color: black;
 }
 
+.navHov:hover {
+    border-bottom: 2px solid;
+    height: 100%;
+    line-height: 80px;
+}
+
 .bStart {
     font-size: 15px;
     padding: 5px 10px;
     margin-right: 10px;
+}
+
+.btnBlue {
+    background-color: #0161FF;
+    border: 4px solid #0161FF;
+    color: white;
+}
+
+.btnBlue:hover {
+    background: white;
+    color: #0161FF;
 }
 
 /* Classi Main */
@@ -109,6 +126,7 @@ input[type="radio"] {
     width: 1.4em;
     height: 1.4em;
     margin-right: 5px;
+    vertical-align: text-bottom;
 }
 
 /* .abbonamenti {
@@ -143,6 +161,7 @@ li > i {
 .btnCella {
     font-size: 15px;
     padding: 8px 45px;
+    width: 100%;
 }
 
 .hrCella {
@@ -168,6 +187,10 @@ li > i {
         border: 1px solid black;
         padding: 13px 20px;
         font-size: 17px;
+    }
+
+    .btnGray:hover {
+        border: 4px solid;
     }
 
     /* Quarto container */
@@ -205,6 +228,8 @@ li > i {
         width: 36%;
         background: #F5F5F5;
         padding: 50px 80px;
+        overflow: auto;
+        max-height: 600px;
     }
 
     .quadrato {
@@ -267,6 +292,10 @@ li > i {
         border: none;
     }
 
+    .btnTrial:hover {
+        border: 4px solid;
+    }
+
     .h2Trial {
         color: #60092B;
         padding-right: 15%;
@@ -281,7 +310,28 @@ li > i {
 
     /* Ottavo container */
     .faq {
-        margin: 25px 0;
+        margin: 40px 0 10px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .hidden {
+        height: 0;
+        overflow: hidden;
+        text-overflow: clip;
+        font-weight: 300;
+        transition: height 1s;
+        margin-top: 30px;
+    }
+
+    .faq:hover > .hidden {
+        height: 40px;
+    }
+
+    .faq:hover > .rotate {
+        transition: transform 1s;
+        transform: rotate(180deg);
     }
 
     /* Nono container */
@@ -301,7 +351,7 @@ li > i {
         color: white;
         padding: 10px 0;
     }
-/* Classi Generiche */
+/* Classi Atomiche */
 
 .m20 {
     margin: 0 20%;
@@ -323,6 +373,10 @@ li > i {
     margin: 2em 0;
 }
 
+.mL35 {
+    margin-left: 35px;
+}
+
 .pRL {
     padding: 0 15px;
 }
@@ -341,12 +395,6 @@ li > i {
 
 .wi80 {
     width: 80%;
-}
-
-.btnBlue {
-    background-color: #0161FF;
-    border: 4px solid #0161FF;
-    color: white;
 }
 
 .bold {
