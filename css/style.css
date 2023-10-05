@@ -212,9 +212,8 @@ li > i {
 
     /* Sesto container */
     .aziendePartner {
-        background-color: rosybrown;
         display: flex;
-        min-height: 600px;
+        height: 50vh;
     }
 
     .aziende {
